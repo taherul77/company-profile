@@ -1,4 +1,6 @@
 import { CardsCarouse } from "@/components/Home/CardsCarouse";
+import { GlobeDemo } from "@/components/Home/GlobeDemo";
+
 
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
     <div className="container">
      
     <CardsCarouse />
+
+    <GlobeDemo />
     </div>
   );
 }

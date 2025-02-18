@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { Cover } from "../ui/cover";
  export  const CardsCarouse = () => {
     const cards = data.map((card, index) => (
         <Card key={card.src} card={card} index={index} />
@@ -9,9 +10,9 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
      
       return (
         <div className="w-full h-full py-20">
-          <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-            Get to know your iSad.
-          </h2>
+           <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+           Services Built Specifically For <Cover>Your Business</Cover>
+      </h1>
           <Carousel items={cards} />
         </div>
       );
